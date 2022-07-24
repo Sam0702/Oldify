@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">OldFlix</string>
+    <string name="sign_up_here">Đăng ký tại đây!!</string>
+    <string name="don_t_have_an_account">Không có tài khoản?</string>
+    <string name="phone_number">Số điện thoại</string>
+    <string name="password">Mật khẩu</string>
+    <string name="sign_in">Đăng nhập</string>
+    <string name="password1">Mật khẩu:</string>
+    <string name="todo">LÀM</string>
+    <string name="phone_number1">Số điện thoại:</string>
+    <string name="call">Cuộc gọi</string>
+    <string name="message">Thông điệp</string>
+    <string name="google">Google</string>
+    <string name="google_maps">bản đồ Google</string>
+    <string name="medicines">Các loại thuốc</string>
+    <string name="dial_in">Quay số</string>
+    <string name="emergency">Khẩn cấp</string>
+    <string name="favouite_contact">Liên hệ Favouite</string>
+    <string name="all_contacts">Tất cả địa chỉ liên hệ</string>
+    <string name="light_mode">Chế độ sáng</string>
+    <string name="setting">Cài đặt</string>
+</resources>

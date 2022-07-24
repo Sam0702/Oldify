@@ -10,4 +10,22 @@
     <string name="password1">Password:</string>
     <string name="phone_number1">Phone Number:</string>
     <string name="todo">TODO</string>
+    <string name="language" translatable="false">language</string>
+    <string name="call">Call</string>
+    <string name="message">Message</string>
+    <string name="google">Google</string>
+    <string name="google_maps">Google Maps</string>
+    <string name="medicines">Medicines</string>
+    <string name="dial_in">Dial In</string>
+    <string name="emergency">Emergency</string>
+    <string name="favouite_contact">Favouite Contact</string>
+    <string name="all_contacts">All Contacts</string>
+    <string name="light_mode">Light Mode</string>
+    <string name="setting">Setting</string>
+    <string-array name="lan">
+        <item>EN</item>
+        <item>HI</item>
+        <item>Vi</item>
+    </string-array>
+
 </resources>
