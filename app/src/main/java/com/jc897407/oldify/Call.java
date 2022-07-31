@@ -9,13 +9,45 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageView;
+import android.widget.SeekBar;
+import android.widget.TextView;
 
 public class Call extends AppCompatActivity {
+
+    TextView dial_in_txt, e_txt, f_c_txt, a_c_txt;
+    SeekBar seekBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_call);
+
+        dial_in_txt = findViewById(R.id.dial_in_txt);
+        e_txt = findViewById(R.id.e_txt);
+        f_c_txt = findViewById(R.id.f_c_txt);
+        a_c_txt = findViewById(R.id.a_c_txt);
+        seekBar = findViewById(R.id.seekBar);
+
+        seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                dial_in_txt.setTextSize(progress);
+                e_txt.setTextSize(progress);
+                f_c_txt.setTextSize(progress);
+                a_c_txt.setTextSize(progress);
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
+
         ImageView dial_in_icon = findViewById(R.id.dial_in_icon);
         dial_in_icon.setOnClickListener(view -> {
             Intent intent = new Intent(this, Dial_in.class);

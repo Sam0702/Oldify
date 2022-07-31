@@ -5,17 +5,55 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ImageView;
+import android.widget.SeekBar;
+import android.widget.TextView;
+import android.widget.ZoomControls;
+
+import org.w3c.dom.Text;
 
 public class ActionPage extends AppCompatActivity {
+    TextView calltxt, messagetxt, googletxt, googlemaptxt, medicinetxt;
+    SeekBar seekBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_action_page);
+
+        calltxt = findViewById(R.id.calltxt);
+        messagetxt = findViewById(R.id.messagetxt);
+        googletxt = findViewById(R.id.googletxt);
+        googlemaptxt = findViewById(R.id.googlemaptxt);
+        medicinetxt = findViewById(R.id.medicinetxt);
+        seekBar = findViewById(R.id.seekBar);
+
+        seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                calltxt.setTextSize(progress);
+                messagetxt.setTextSize(progress);
+                googletxt.setTextSize(progress);
+                googlemaptxt.setTextSize(progress);
+                medicinetxt.setTextSize(progress);
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
+
         ImageView call = findViewById(R.id.call);
         call.setOnClickListener(view -> {
             Intent intent = new Intent(this, Call.class);
@@ -42,7 +80,7 @@ public class ActionPage extends AppCompatActivity {
 
         ImageView medicines = findViewById(R.id.medicines);
         medicines.setOnClickListener(view -> {
-            Intent intent = new Intent(this, MainActivity.class);
+            Intent intent = new Intent(this, Medicines.class);
             startActivity(intent);
         });
 
@@ -72,4 +110,7 @@ public class ActionPage extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+
+
+
 }
