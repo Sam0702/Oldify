@@ -8,15 +8,17 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.ImageView;
+import android.widget.Spinner;
+import android.widget.TextView;
 
-public class signIn extends AppCompatActivity {
+public class SignUp extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sign_in);
+        setContentView(R.layout.activity_sign_up);
         // calling the action bar
         ActionBar actionBar = getSupportActionBar();
 
@@ -24,17 +26,12 @@ public class signIn extends AppCompatActivity {
         assert actionBar != null;
         actionBar.setDisplayHomeAsUpEnabled(true);
 
-        ImageView faceRecognition = findViewById(R.id.facerecognition);
-        faceRecognition.setOnClickListener(view -> {
-            Intent intent = new Intent(this, ActionPage.class);
+        Button sigBtn = findViewById(R.id.signup);
+        sigBtn.setOnClickListener(view -> {
+            Intent intent = new Intent(this, signIn.class);
             startActivity(intent);
         });
 
-        Button sigBtn = findViewById(R.id.signin);
-        sigBtn.setOnClickListener(view -> {
-            Intent intent = new Intent(this, ActionPage.class);
-            startActivity(intent);
-        });
     }
 
     @Override

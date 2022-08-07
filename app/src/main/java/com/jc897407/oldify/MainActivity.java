@@ -12,6 +12,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
+import android.widget.TextView;
 
 import java.util.Locale;
 
@@ -32,9 +33,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Button signinBtn = findViewById(R.id.signinBtn);
-
         signinBtn.setOnClickListener(view -> {
             Intent intent = new Intent(this, signIn.class);
+            startActivity(intent);
+        });
+
+        TextView signuppage = findViewById(R.id.signuppage);
+        signuppage.setOnClickListener(view -> {
+            Intent intent = new Intent(this, SignUp.class);
             startActivity(intent);
         });
     }

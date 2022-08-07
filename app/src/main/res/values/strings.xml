@@ -37,5 +37,17 @@
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="enter_the_new_item_name">Enter the new item name</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="name">name</string>
+
+    <string-array name="age">
+        <item>Below 70</item>
+        <item>70 and Above</item>
+    </string-array>
+
+    <string-array name="security">
+        <item>No Security (Fast Sign In)</item>
+        <item>Needs Security</item>
+    </string-array>
 
 </resources>
