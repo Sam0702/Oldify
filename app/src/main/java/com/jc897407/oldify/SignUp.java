@@ -8,10 +8,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class SignUp extends AppCompatActivity {
 
@@ -32,6 +35,34 @@ public class SignUp extends AppCompatActivity {
             startActivity(intent);
         });
 
+        Button age_fn = (Button) findViewById(R.id.age_button);
+        age_fn.setOnClickListener( new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                age_function();
+            }
+        });
+    }
+
+    private void age_function() {
+
+        Button signup = findViewById(R.id.signup);
+        Button signup2 = findViewById(R.id.signup2);
+        Button age_button = findViewById(R.id.age_button);
+
+        EditText age = findViewById(R.id.age);
+        double amount = Double.parseDouble(age.getText().toString());
+
+        if (amount >= 70) {
+            signup.setVisibility(View.VISIBLE);
+        }
+
+        else {
+            signup.setVisibility(View.VISIBLE);
+            signup2.setVisibility(View.VISIBLE);
+        }
+
+        age_button.setVisibility(View.INVISIBLE);
     }
 
     @Override

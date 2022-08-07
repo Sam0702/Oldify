@@ -14,7 +14,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="408dp"
         android:layout_marginEnd="219dp"
-        android:text="Select Age:"
+        android:text="Enter Age:"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -101,27 +101,45 @@
         android:id="@+id/signup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="152dp"
-        android:layout_marginEnd="165dp"
-        android:text="@string/sign_up"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="643dp" />
-
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="88dp"
-        android:layout_height="35dp"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="42dp"
-        tools:layout_editor_absoluteY="457dp" />
+        android:layout_marginStart="123dp"
+        android:layout_marginBottom="14dp"
+        android:text="Easy Sign Up"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/signup2"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/signup2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="86dp"
+        android:layout_marginBottom="66dp"
+        android:text="Sign up with security"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/age_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="126dp"
+        android:layout_marginBottom="33dp"
         android:text="Finalize age"
-        tools:layout_editor_absoluteX="142dp"
-        tools:layout_editor_absoluteY="502dp" />
+        app:layout_constraintBottom_toTopOf="@+id/signup"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginBottom="34dp"
+        android:ems="10"
+        android:hint="Age"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/age_button"
+        app:layout_constraintStart_toEndOf="@+id/textView4" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
