@@ -28,10 +28,16 @@ public class SignUp extends AppCompatActivity {
         // showing the back button in action bar
         assert actionBar != null;
         actionBar.setDisplayHomeAsUpEnabled(true);
-
-        Button sigBtn = findViewById(R.id.signup);
-        sigBtn.setOnClickListener(view -> {
+        //Signin without OTP
+        Button signup = findViewById(R.id.signup);
+        signup.setOnClickListener(view -> {
             Intent intent = new Intent(this, signIn.class);
+            startActivity(intent);
+        });
+        //Signin With OTP
+        Button signup2 = findViewById(R.id.signup2);
+        signup2.setOnClickListener(view -> {
+            Intent intent = new Intent(this, signIn_Security.class);
             startActivity(intent);
         });
 

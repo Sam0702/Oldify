@@ -33,6 +33,7 @@ public class ActionPage extends AppCompatActivity {
         medicinetxt = findViewById(R.id.medicinetxt);
         seekBar = findViewById(R.id.seekBar);
 
+        // Increase the text size using SeekBar
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
@@ -86,7 +87,6 @@ public class ActionPage extends AppCompatActivity {
 
         // calling the action bar
         ActionBar actionBar = getSupportActionBar();
-
         // showing the back button in action bar
         assert actionBar != null;
         actionBar.setDisplayHomeAsUpEnabled(true);
@@ -110,7 +110,5 @@ public class ActionPage extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
-
-
 
 }

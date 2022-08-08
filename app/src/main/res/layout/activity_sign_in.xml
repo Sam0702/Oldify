@@ -7,41 +7,97 @@
     android:layout_height="match_parent"
     tools:context=".signIn">
 
-  <EditText
-      android:id="@+id/editTextTextPersonName2"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_marginStart="32dp"
-      android:layout_marginTop="40dp"
-      android:layout_marginEnd="169dp"
-      android:ems="10"
-      android:hint="@string/password"
-      android:inputType="textPersonName"
-      android:minHeight="48dp"
-      android:textColorHint="#757575"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/enter_name"
-      android:autofillHints="" />
-
   <Button
       android:id="@+id/signin"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:layout_marginTop="36dp"
+      android:layout_marginTop="78dp"
       android:text="@string/sign_in"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.473"
+      app:layout_constraintHorizontal_bias="0.47"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+      app:layout_constraintTop_toBottomOf="@+id/signuppage" />
+
+  <TextView
+      android:id="@+id/textView13"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      android:layout_marginBottom="12dp"
+      android:text="OR"
+      android:textSize="16sp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toTopOf="@+id/facerecognition"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.497"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/signin" />
+
+  <TextView
+      android:id="@+id/textView14"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:layout_marginBottom="45dp"
+      android:text="Face Recognition"
+      android:textSize="16sp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.524"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/facerecognition" />
+
+  <ImageView
+      android:id="@+id/facerecognition"
+      android:layout_width="193dp"
+      android:layout_height="139dp"
+      android:layout_marginTop="12dp"
+      android:layout_marginBottom="8dp"
+      app:layout_constraintBottom_toTopOf="@+id/textView14"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.495"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView13"
+      app:srcCompat="@drawable/facerecognition" />
+
+  <ImageView
+      android:id="@+id/imageView"
+      android:layout_width="110dp"
+      android:layout_height="117dp"
+      android:layout_marginTop="48dp"
+      android:layout_marginBottom="62dp"
+      android:contentDescription="@string/todo"
+      app:layout_constraintBottom_toTopOf="@+id/textView"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.514"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:srcCompat="@drawable/img" />
+
+  <TextView
+      android:id="@+id/signuppage"
+      android:layout_width="148dp"
+      android:layout_height="40dp"
+      android:layout_marginStart="71dp"
+      android:layout_marginTop="28dp"
+      android:layout_marginEnd="12dp"
+      android:layout_marginBottom="78dp"
+      android:rotationX="-4"
+      android:text="+61456782"
+      android:textSize="24sp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toTopOf="@+id/signin"
+      app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView" />
 
   <EditText
       android:id="@+id/editTextTextPersonName"
       android:layout_width="140dp"
       android:layout_height="48dp"
-      android:layout_marginStart="12dp"
-      android:layout_marginTop="36dp"
-      android:layout_marginEnd="108dp"
+      android:layout_marginTop="21dp"
+      android:layout_marginEnd="65dp"
       android:autofillHints=""
       android:ems="10"
       android:hint="@string/phone_number"
@@ -49,116 +105,19 @@
       android:minHeight="48dp"
       android:textColorHint="#757575"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintStart_toEndOf="@+id/signuppage"
       app:layout_constraintTop_toBottomOf="@+id/textView" />
 
   <TextView
       android:id="@+id/textView"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:layout_marginStart="32dp"
-      android:layout_marginTop="140dp"
-      android:layout_marginEnd="219dp"
+      android:layout_marginTop="62dp"
       android:text="Complete Phone Number:"
       android:textSize="24sp"
       android:textStyle="bold"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintHorizontal_bias="0.496"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent" />
-
-  <TextView
-      android:id="@+id/enter_name"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_marginStart="32dp"
-      android:layout_marginTop="44dp"
-      android:layout_marginEnd="272dp"
-      android:layout_marginBottom="3dp"
-      android:text="One Time Password:"
-      android:textSize="24sp"
-      android:textStyle="bold"
-      app:layout_constraintBottom_toTopOf="@+id/textView3"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.0"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
-
-  <ImageView
-      android:id="@+id/imageView"
-      android:layout_width="110dp"
-      android:layout_height="117dp"
-      android:layout_marginTop="3dp"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent"
-      app:srcCompat="@drawable/img"
-      android:contentDescription="@string/todo" />
-
-  <TextView
-      android:id="@+id/textView13"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_marginTop="17dp"
-      android:text="OR"
-      android:textSize="16sp"
-      android:textStyle="bold"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/signin" />
-
-  <ImageView
-      android:id="@+id/facerecognition"
-      android:layout_width="193dp"
-      android:layout_height="139dp"
-      android:layout_marginTop="8dp"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/textView13"
-      app:srcCompat="@drawable/facerecognition" />
-
-  <TextView
-      android:id="@+id/textView14"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_marginTop="2dp"
-      android:text="Face Recognition"
-      android:textSize="16sp"
-      android:textStyle="bold"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.527"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/facerecognition" />
-
-  <TextView
-      android:id="@+id/signuppage"
-      android:layout_width="0dp"
-      android:layout_height="41dp"
-      android:layout_marginStart="28dp"
-      android:rotationX="-4"
-      android:text="+61456782"
-      android:textSize="24sp"
-      android:textStyle="bold"
-      app:layout_constraintBottom_toTopOf="@+id/enter_name"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/textView"
-      app:layout_constraintVertical_bias="0.462" />
-
-  <TextView
-      android:id="@+id/textView3"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_marginStart="32dp"
-      android:layout_marginTop="3dp"
-      android:layout_marginEnd="256dp"
-      android:layout_marginBottom="18dp"
-      android:text="Click to get the OTP"
-      android:textColor="@color/design_default_color_primary"
-      app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName2"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.0"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/enter_name"
-      app:layout_constraintVertical_bias="0.0" />
+      app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
