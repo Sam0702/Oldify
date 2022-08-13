@@ -20,4 +20,20 @@
     <string name="all_contacts">सभी संपर्क</string>
     <string name="light_mode">लाइट मोड</string>
     <string name="setting">स्थापना</string>
+    <string name="title_activity_add_item">आइटम गतिविधि जोड़ें</string>
+    <string name="first_fragment_label">पहला टुकड़ा</string>
+    <string name="second_fragment_label">दूसरा टुकड़ा</string>
+    <string name="next">अगला</string>
+    <string name="previous">पिछला</string>
+    <string name="enter_the_new_item_name">नया आइटम नाम दर्ज करें</string>
+    <string name="name">नाम</string>
+    <string name="sign_up">साइन अप करें</string>
+    <string name="hello_first_fragment">नमस्ते पहला टुकड़ा</string>
+    <string name="enter_name">नाम दर्ज:</string>
+    <string name="enter_phone_number">फोन नंबर दर्ज:</string>
+    <string name="enter_age">आयु दर्ज करें:</string>
+    <string name="age">आयु</string>
+    <string name="sign_up_with_security">सुरक्षा के साथ साइन अप करें</string>
+    <string name="easy_sign_up">आसान साइन अप</string>
+    <string name="finalize_age">उम्र को अंतिम रूप दें</string>
 </resources>

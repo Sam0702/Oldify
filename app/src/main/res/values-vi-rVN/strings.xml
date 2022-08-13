@@ -20,4 +20,20 @@
     <string name="all_contacts">Tất cả địa chỉ liên hệ</string>
     <string name="light_mode">Chế độ sáng</string>
     <string name="setting">Cài đặt</string>
+    <string name="title_activity_add_item">Thêm hoạt động mặt hàng</string>
+    <string name="first_fragment_label">Mảnh đầu tiên</string>
+    <string name="second_fragment_label">Mảnh thứ hai</string>
+    <string name="next">Tiếp theo</string>
+    <string name="previous">Trước</string>
+    <string name="hello_first_fragment">Xin chào mảnh đầu tiên</string>
+    <string name="enter_the_new_item_name">Nhập tên mặt hàng mới</string>
+    <string name="sign_up">Đăng ký</string>
+    <string name="name">Tên</string>
+    <string name="enter_name">Nhập tên:</string>
+    <string name="enter_phone_number">Nhập số điện thoại:</string>
+    <string name="enter_age">Nhập tuổi:</string>
+    <string name="age">Tuổi tác</string>
+    <string name="sign_up_with_security">Đăng ký bằng bảo mật</string>
+    <string name="easy_sign_up">Đăng ký dễ dàng</string>
+    <string name="finalize_age">Tổng kết tuổi</string>
 </resources>

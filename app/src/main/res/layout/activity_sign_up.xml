@@ -14,7 +14,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="408dp"
         android:layout_marginEnd="219dp"
-        android:text="Enter Age:"
+        android:text="@string/enter_age"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -41,7 +41,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="36dp"
         android:layout_marginEnd="272dp"
-        android:text="Enter Phone Number:"
+        android:text="@string/enter_phone_number"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -89,7 +89,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="160dp"
         android:layout_marginEnd="219dp"
-        android:text="Enter Name:"
+        android:text="@string/enter_name"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -103,7 +103,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="84dp"
         android:layout_marginBottom="136dp"
-        android:text="Sign up with security"
+        android:text="@string/sign_up_with_security"
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -114,7 +114,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="124dp"
         android:layout_marginBottom="16dp"
-        android:text="Easy Sign Up"
+        android:text="@string/easy_sign_up"
         android:visibility="invisible"
         app:layout_constraintBottom_toTopOf="@+id/signup2"
         app:layout_constraintStart_toStartOf="parent" />
@@ -125,9 +125,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="124dp"
         android:layout_marginTop="18dp"
-        android:text="Finalize age"
+        android:text="@string/finalize_age"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        tools:ignore="TextContrastCheck" />
 
     <EditText
         android:id="@+id/age"
@@ -136,10 +137,11 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="15dp"
         android:ems="10"
-        android:hint="Age"
+        android:hint="@string/age"
         android:inputType="numberDecimal"
         android:minHeight="48dp"
         app:layout_constraintStart_toEndOf="@+id/textView4"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"
+        android:autofillHints="" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

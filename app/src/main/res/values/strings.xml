@@ -39,6 +39,13 @@
     <string name="enter_the_new_item_name">Enter the new item name</string>
     <string name="sign_up">Sign Up</string>
     <string name="name">name</string>
+    <string name="enter_name">Enter Name:</string>
+    <string name="enter_phone_number">Enter Phone Number:</string>
+    <string name="enter_age">Enter Age:</string>
+    <string name="age">Age</string>
+    <string name="sign_up_with_security">Sign up with security</string>
+    <string name="easy_sign_up">Easy Sign Up</string>
+    <string name="finalize_age">Finalize age</string>
 
     <string-array name="age">
         <item>Below 70</item>
